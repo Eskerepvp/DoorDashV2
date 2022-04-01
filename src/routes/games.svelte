@@ -3,6 +3,7 @@
   import TetrisButton from '$lib/Buttons/Games/TetrisButton.svelte'
   import Ohh1Button from '$lib/Buttons/Games/Ohh1Button.svelte'
   import AstrayButton from '$lib/Buttons/Games/AstrayButton.svelte'
+  import CookiesButton from '$lib/Buttons/Games/CookiesButton.svelte'
 </script>
 
 <style>
@@ -173,6 +174,23 @@
   z-index:2;
   }
 
+  #CookiesDiv {
+  border:none;
+  border-radius:10px;
+  color:white;
+  display:inline-block;
+  font-size:24px;
+  font-family:inherit;
+  position:relative; 
+  background-color:#404757;
+  border:10px solid #404757;
+  }
+
+  #CookiesDiv:hover {
+  transform:scale(1.05);
+  z-index:2;
+  }
+
   @media (min-width: 480px) {
     h1 {
       max-width: none;
@@ -233,6 +251,13 @@
   <AstrayButton/>
   <p id="AstrayText">
     Astray
+  </p>
+  </div>
+
+  <div id="CookiesDiv">
+  <CookiesButton/>
+  <p id="CookiesText">
+    Cookie Clicker
   </p>
   </div>
   
