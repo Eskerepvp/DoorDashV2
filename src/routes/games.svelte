@@ -1,6 +1,8 @@
 <script>
-  import MenuButton from '$lib/Buttons/Global/MenuButton.svelte';
+  import MenuButton from '$lib/Buttons/Global/MenuButton.svelte'
   import TetrisButton from '$lib/Buttons/Games/TetrisButton.svelte'
+  import Ohh1Button from '$lib/Buttons/Games/Ohh1Button.svelte'
+  import AstrayButton from '$lib/Buttons/Games/AstrayButton.svelte'
 </script>
 
 <style>
@@ -121,20 +123,54 @@
   }
 
   #tetrisDiv {
-      border:none;
-      border-radius:10px;
-      color:white;
-      display:inline-block;
-      font-size:24px;
-      font-family:inherit;
-      position:relative; 
-      background-color:#404757;
-      border:10px solid #404757;
+  border:none;
+  border-radius:10px;
+  color:white;
+  display:inline-block;
+  font-size:24px;
+  font-family:inherit;
+  position:relative; 
+  background-color:#404757;
+  border:10px solid #404757;
   }
 
   #tetrisDiv:hover {
-      transform:scale(1.05);
-      z-index:2;
+  transform:scale(1.05);
+  z-index:2;
+  }
+
+  #Ohh1Div {
+  border:none;
+  border-radius:10px;
+  color:white;
+  display:inline-block;
+  font-size:24px;
+  font-family:inherit;
+  position:relative; 
+  background-color:#404757;
+  border:10px solid #404757;
+  }
+
+  #Ohh1Div:hover {
+  transform:scale(1.05);
+  z-index:2;
+  }
+
+  #AstrayDiv {
+  border:none;
+  border-radius:10px;
+  color:white;
+  display:inline-block;
+  font-size:24px;
+  font-family:inherit;
+  position:relative; 
+  background-color:#404757;
+  border:10px solid #404757;
+  }
+
+  #AstrayDiv:hover {
+  transform:scale(1.05);
+  z-index:2;
   }
 
   @media (min-width: 480px) {
@@ -185,5 +221,19 @@
       Tetris
     </p>
   </div>
-    
+  
+  <div id="Ohh1Div">
+  <Ohh1Button/>
+  <p id="Ohh1Text">
+    0h h1
+  </p>
+  </div>
+
+  <div id="AstrayDiv">
+  <AstrayButton/>
+  <p id="AstrayText">
+    Astray
+  </p>
+  </div>
+  
 </main>

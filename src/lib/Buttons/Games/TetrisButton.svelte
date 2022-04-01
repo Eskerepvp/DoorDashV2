@@ -1,9 +1,10 @@
 <button on:click={openTetris}>
-     <img src="assets/tetris.webp" alt="Tetris Pic" width="225" height="225">
+     <img src="assets/games/tetris.webp" alt="Tetris Pic" width="225" height="225">
 </button>
 
 <script>
-function openTetris() {     window.open('https://doordashv2.devendyer.repl.co/games/tetris/index.html');
+function openTetris() {
+  window.open('https://doordashv2.devendyer.repl.co/games/tetris/index.html');
 }
 </script>
 

@@ -1,5 +1,5 @@
 <button on:click={loadMenu}>
-     <img src="assets/menuBars.png" alt="Menu Bars" width="12" height="12"> 
+     <img src="assets/global/menuBars.png" alt="Menu Bars" width="12" height="12"> 
 </button>
 
 <script>
